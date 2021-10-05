@@ -8,6 +8,9 @@
 }
 
 /* Header */
+.navigate-list {
+  list-style-type: none;
+}
 
 .navigate-logo {
   font-family: 'Raleway', sans-serif;
@@ -80,6 +83,10 @@
 }
 
 /* Section Advantages */
+
+.title-advantages-list {
+  list-style-type: none;
+}
 
 .title-advantages {
   display: none;
@@ -193,4 +200,25 @@
   font-size: 16px;
   line-height: 160%;
   color: #757575;
+}
+.container {
+  max-width: 1600;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* .container-header-nav > li,
+.container-header-contacts > li {
+  display: inline;
+}
+
+.container-header-nav-block {
+  display: inline;
+} */
+.container-header {
+  justify-content: flex-start;
+  padding: 0 215px;
+  background-color: tomato;
+}
+.navigate-list > li {
+  display: inline;
 }
