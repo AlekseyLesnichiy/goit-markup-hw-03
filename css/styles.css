@@ -2,14 +2,20 @@
 /* основной цвет текста  #212121;*/
 /*цвет акцента внимания #2196F3  */
 /* footer background: #2F303A; */
+
 .body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 /* Header */
-.navigate-list {
+
+.navigate-list,
+.navigate-list-contacts {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigate-logo {
@@ -65,15 +71,26 @@
 
 /* Section Hero */
 
+.hero {
+  text-align: center;
+}
 .title-hero {
   font-weight: 900;
   font-size: 44px;
   line-height: 116%;
-  color: #ffffff;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 30;
 }
 .hero-button {
   background-color: #2196f3;
   cursor: pointer;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: inline-block;
+  min-width: 200px;
+  text-align: center;
 }
 .hero-button-text {
   font-weight: 700;
@@ -85,19 +102,24 @@
 /* Section Advantages */
 
 .title-advantages-list {
+  margin-top: 0;
   list-style-type: none;
 }
 
 .title-advantages {
-  display: none;
+  margin-top: 0;
 }
 .title-advantages-subject {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
   color: #212121;
 }
 .title-advantages-text {
+  margin-top: 0;
+  margin-bottom: 94px;
   font-weight: 400;
   font-size: 14px;
   line-height: 146%;
@@ -201,24 +223,19 @@
   line-height: 160%;
   color: #757575;
 }
-.container {
-  max-width: 1600;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-/* .container-header-nav > li,
-.container-header-contacts > li {
-  display: inline;
-}
 
-.container-header-nav-block {
-  display: inline;
-} */
-.container-header {
-  justify-content: flex-start;
-  padding: 0 215px;
-  background-color: tomato;
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
 }
-.navigate-list > li {
-  display: inline;
+.container-header {
+  outline: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
