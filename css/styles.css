@@ -25,7 +25,7 @@
   line-height: 100%;
   color: #212121;
 }
-.navigate-logo-color {
+.logo-color {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 26px;
@@ -139,21 +139,36 @@
   font-size: 36px;
   line-height: 100%;
   color: #212121;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .title-team-subject {
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
   color: #212121;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .title-team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   color: #757575;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 /* Footer */
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  color: #212121;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 
 .footer-adress {
   font-weight: 400;
@@ -199,6 +214,9 @@
   font-size: 16px;
   line-height: 139%;
   color: #212121;
+  display: inline-block;
+  min-width: 73px;
+  text-align: center;
 }
 .button-list-item-text:hover,
 .button-list-item-text:focus {
@@ -211,17 +229,29 @@
 
 /* Section of projects */
 
+.title-portfolio-projects {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .portfolio-title-samples-subject {
   font-weight: 700;
   font-size: 18px;
   line-height: 171%;
   color: #212121;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 .portfolio-title-samples-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: #757575;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .container {
