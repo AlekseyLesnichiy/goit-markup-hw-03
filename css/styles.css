@@ -2,35 +2,34 @@
 /* основной цвет текста  #212121;*/
 /*цвет акцента внимания #2196F3  */
 /* footer background: #2F303A; */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-primary-color: #f5f4fa;
+}
 
 .body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  margin: 0;
 }
 
 /* Header */
 
-.navigate-list,
-.navigate-list-contacts {
+.navigate-list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
-
 .navigate-logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
   font-size: 26px;
-  line-height: 100%;
-  color: #212121;
+  line-height: 1.192;
+  color: var(--title-text-color);
 }
-.logo-color {
+.navigate-logo-color {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
   font-size: 26px;
-  line-height: 100%;
-  color: #2196f3;
+  line-height: 1.192;
+  color: var(--accent-color);
 }
 
 .navigate-studio,
@@ -38,92 +37,77 @@
 .navigate-contacts {
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
-  color: #212121;
+  line-height: 1.14;
+  color: var(--title-text-color);
 }
 .navigate-studio:hover,
 .navigate-studio:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .navigate-portfolio:hover,
 .navigate-portfolio:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .navigate-contacts:hover,
 .navigate-contacts:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .navigate-mail,
 .navigate-phone {
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
-  color: #757575;
+  line-height: 1.14;
+  color: var(--primary-text-color);
 }
 .navigate-mail:hover,
 .navigate-mail:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .navigate-phone:hover,
 .navigate-phone:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Section Hero */
 
-.hero {
-  text-align: center;
-}
 .title-hero {
   font-weight: 900;
   font-size: 44px;
-  line-height: 116%;
-  color: #000000;
-  margin-top: 0;
-  margin-bottom: 30;
+  line-height: 1.36;
+  color: var(--title-text-color);
 }
 .hero-button {
-  background-color: #2196f3;
+  background-color: var(--button-primary-color);
   cursor: pointer;
-  padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  display: inline-block;
-  min-width: 200px;
-  text-align: center;
-}
-.hero-button-text {
   font-weight: 700;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 1.875;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color);
   color: #ffffff;
 }
 
 /* Section Advantages */
 
-.title-advantages-list {
-  margin-top: 0;
+.advantages-list {
   list-style-type: none;
 }
 
 .title-advantages {
-  margin-top: 0;
+  display: none;
 }
 .title-advantages-subject {
-  margin-top: 0;
-  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 100%;
-  color: #212121;
+  line-height: 1.14;
+  color: var(--title-text-color) 1;
 }
 .title-advantages-text {
-  margin-top: 0;
-  margin-bottom: 94px;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 146%;
-  color: #757575;
+  line-height: 1.71;
+  color: var(--primary-text-color);
 }
 
 /* Section Samples,Team */
@@ -137,122 +121,94 @@
 .title-team {
   font-weight: 700;
   font-size: 36px;
-  line-height: 100%;
-  color: #212121;
-  margin-top: 0;
-  margin-bottom: 50px;
+  line-height: 1.1666;
+  color: var(--title-text-color);
 }
 .title-team-subject {
   font-weight: 500;
   font-size: 16px;
-  line-height: 100%;
-  color: #212121;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  line-height: 1.1875;
+  color: var(--title-text-color);
 }
 .title-team-text {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 100%;
-  color: #757575;
-  margin-top: 0px;
-  margin-bottom: 30px;
+  line-height: 1.1875;
+  color: var(--primary-text-color);
 }
 
 /* Footer */
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 100%;
-  color: #212121;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
 
 .footer-adress {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.1875;
   color: #ffffff;
 }
 .footer-mail,
 .footer-phone {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 146%;
-  color: #757575;
+  line-height: 1.1875;
+  color: var(--primary-text-color);
 }
 .footer-mail:hover,
 .footer-mail:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .footer-adress:hover,
 .footer-adress:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .footer-phone:hover,
 .footer-phone:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .footer {
   background-color: #2f303a;
 }
-
+.footer-logo-color {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.192;
+  color: #ffffff;
+}
 /* Portfolio page */
 /* Buttons */
+
 .button-list-item {
-  background-color: #f5f4fa;
+  background-color: var(--button-primary-color);
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.368;
+  color: var(--title-text-color);
 }
 .button-list-item:hover,
 .button-list-item:focus {
-  background-color: #2196f3;
-}
-.button-list-item-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 139%;
-  color: #212121;
-  display: inline-block;
-  min-width: 73px;
-  text-align: center;
-}
-.button-list-item-text:hover,
-.button-list-item-text:focus {
+  background-color: var(--accent-color);
   color: #ffffff;
 }
-.button-list,
-.portfolio-title-samples {
+.projects-section-button-list,
+.projects-section-title-samples {
   list-style-type: none;
 }
 
 /* Section of projects */
 
-.title-portfolio-projects {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 100%;
-  color: #212121;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .portfolio-title-samples-subject {
   font-weight: 700;
   font-size: 18px;
-  line-height: 171%;
-  color: #212121;
-  margin-top: 20px;
+  line-height: 2;
+  color: var(--title-text-color);
+  margin-top: 0;
   margin-bottom: 4px;
 }
 .portfolio-title-samples-text {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 160%;
-  color: #757575;
+  line-height: 1.875;
+  color: var(--primary-text-color);
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
+/* homewokr 3 */
 
 .container {
   width: 1200px;
@@ -260,12 +216,15 @@
   margin-right: auto;
   outline: 1px solid tomato;
 }
-.container-header {
-  outline: 2px solid black;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section {
+.hero-section,
+.advantages-section,
+.samples-section,
+.team-section,
+.projects-section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.link-border {
+  border: solid #eeeeee;
+  width: 369px;
 }
