@@ -25,6 +25,9 @@
 
   list-style-type: none;
 }
+.navigate {
+  display: flex;
+}
 .navigate-list.mail {
   margin-left: auto;
 }
@@ -37,6 +40,10 @@
 }
 
 .navigate-logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   color: var(--title-text-color);
 
   font-family: 'Raleway', sans-serif;
