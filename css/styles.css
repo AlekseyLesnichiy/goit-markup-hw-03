@@ -25,12 +25,14 @@
   font-size: 26px;
   line-height: 1.192;
   color: var(--title-text-color);
+  text-decoration: none;
 }
 .navigate-logo-color {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.192;
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .navigate-studio,
@@ -41,6 +43,7 @@
   line-height: 1.14;
   color: var(--title-text-color);
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .navigate-studio:hover,
 .navigate-studio:focus {
@@ -61,6 +64,7 @@
   line-height: 1.14;
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .navigate-mail:hover,
 .navigate-mail:focus {
@@ -80,6 +84,7 @@
   color: var(--title-text-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 .hero-button {
   background-color: var(--button-primary-color);
@@ -90,6 +95,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  display: inline-block;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -150,12 +156,14 @@
   font-size: 14px;
   line-height: 1.1875;
   color: #ffffff;
+  text-decoration: none;
 }
 .footer-mail,
 .footer-phone {
   font-size: 14px;
   line-height: 1.1875;
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 .footer-mail:hover,
 .footer-mail:focus {
@@ -177,6 +185,7 @@
   font-size: 26px;
   line-height: 1.192;
   color: #ffffff;
+  text-decoration: none;
 }
 /* Portfolio page */
 /* Buttons */
@@ -189,6 +198,7 @@
   font-size: 16px;
   line-height: 1.368;
   color: var(--title-text-color);
+  display: inline-block;
 }
 .button-list-item:hover,
 .button-list-item:focus {
