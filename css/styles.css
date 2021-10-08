@@ -18,30 +18,58 @@
 /* Header */
 
 .navigate-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 93px;
+
   list-style-type: none;
 }
+.navigate-list.mail {
+  margin-left: auto;
+}
+.navigate-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+.container.nav {
+  display: flex;
+  align-items: center;
+}
+
 .navigate-logo {
+  color: var(--title-text-color);
+
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.192;
-  color: var(--title-text-color);
   text-decoration: none;
 }
 .navigate-logo-color {
+  color: var(--accent-color);
+
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.192;
-  color: var(--accent-color);
   text-decoration: none;
+}
+.navigate-mail,
+.navigate-phone,
+.navigate-studio,
+.navigate-contacts,
+.navigate-portfolio {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .navigate-studio,
 .navigate-portfolio,
 .navigate-contacts {
+  color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--title-text-color);
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -78,24 +106,28 @@
 /* Section Hero */
 
 .title-hero {
+  color: var(--title-text-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: var(--title-text-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
 }
 .hero-button {
+  display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   background-color: var(--button-primary-color);
-  cursor: pointer;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  display: inline-block;
+
+  cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -106,6 +138,9 @@
 /* Section Advantages */
 
 .advantages-list {
+  margin: 0;
+  padding: 0;
+
   list-style-type: none;
 }
 
@@ -113,15 +148,23 @@
   display: none;
 }
 .title-advantages-subject {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color) 1;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--title-text-color) 1;
 }
 .title-advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--primary-text-color);
+
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-text-color);
 }
 
 /* Section Samples,Team */
@@ -129,40 +172,56 @@
 .samples-list,
 .team-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .title-samples,
 .title-team {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1666;
-  color: var(--title-text-color);
 }
 .title-team-subject {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
-  color: var(--title-text-color);
 }
 .title-team-text {
+  margin-bottom: 30px;
+  margin-top: 0;
+
+  color: var(--primary-text-color);
+
   font-size: 16px;
   line-height: 1.1875;
-  color: var(--primary-text-color);
 }
 
 /* Footer */
 
 .footer-adress {
+  color: #ffffff;
+
   font-size: 14px;
   line-height: 1.1875;
-  color: #ffffff;
   text-decoration: none;
 }
 .footer-mail,
 .footer-phone {
+  color: var(--primary-text-color);
+
   font-size: 14px;
   line-height: 1.1875;
-  color: var(--primary-text-color);
   text-decoration: none;
 }
 .footer-mail:hover,
@@ -181,24 +240,29 @@
   background-color: #2f303a;
 }
 .footer-logo-color {
+  color: #ffffff;
+
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.192;
-  color: #ffffff;
   text-decoration: none;
 }
 /* Portfolio page */
 /* Buttons */
 
 .button-list-item {
+  display: inline-block;
+  border-radius: 4px;
+
   background-color: var(--button-primary-color);
+  color: var(--title-text-color);
+
   font-family: inherit;
-  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.368;
-  color: var(--title-text-color);
-  display: inline-block;
+
+  cursor: pointer;
 }
 .button-list-item:hover,
 .button-list-item:focus {
@@ -208,25 +272,31 @@
 .projects-section-button-list,
 .projects-section-title-samples {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Section of projects */
 
 .portfolio-title-samples-subject {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: var(--title-text-color);
-  margin-top: 0;
-  margin-bottom: 4px;
   letter-spacing: 0.06em;
 }
 .portfolio-title-samples-text {
-  font-size: 16px;
-  line-height: 1.875;
-  color: var(--primary-text-color);
   margin-top: 0;
   margin-bottom: 20px;
+
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.875;
 }
 /* homewokr 3 */
 
@@ -243,7 +313,9 @@
 .projects-section {
   padding-top: 94px;
   padding-bottom: 94px;
+  text-align: center;
 }
+
 .link-border {
   border: solid #eeeeee;
   width: 369px;
