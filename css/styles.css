@@ -348,6 +348,7 @@
 .projects-section-title-samples .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
 .portfolio-title-samples-subject {
   margin-top: 20px;
   margin-bottom: 4px;
@@ -357,7 +358,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-title-samples-text {
