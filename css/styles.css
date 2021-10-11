@@ -329,7 +329,10 @@
 .projects-section-title-samples .content {
   padding-left: 24px;
   padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .projects-section-title-samples {
@@ -355,7 +358,7 @@
   line-height: 2;
 }
 .portfolio-title-samples-subject {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
 
   color: var(--title-text-color);
@@ -368,7 +371,7 @@
 
 .portfolio-title-samples-text {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 
   color: var(--primary-text-color);
 
