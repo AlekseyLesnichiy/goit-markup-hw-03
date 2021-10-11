@@ -323,6 +323,9 @@
 .projects-section-button-list .item:not(:last-child) {
   margin-right: 8px;
 }
+.link {
+  text-decoration: none;
+}
 
 /* Section of projects */
 
