@@ -7,19 +7,36 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --button-primary-color: #f5f4fa;
+  --primary-bg-color: #e5e5e5;
 }
 
 .body {
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0px;
+  margin-bottom: 0px;
+}
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header */
 
 .navigate-list {
-  margin: 0;
-  padding: 0;
+  margin: inherit;
+  padding: inherit;
   display: flex;
   margin-left: 93px;
 
@@ -66,8 +83,10 @@
 .navigate-contacts,
 .navigate-portfolio {
   display: block;
+  font-size: 14px;
   padding-top: 32px;
   padding-bottom: 32px;
+  color: var(--primary-text-color);
 }
 
 .navigate-studio,
@@ -76,7 +95,6 @@
   color: var(--title-text-color);
 
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -96,9 +114,7 @@
 .navigate-mail,
 .navigate-phone {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
-  color: var(--primary-text-color);
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -114,7 +130,7 @@
 /* Section Hero */
 
 .title-hero {
-  margin-top: 0;
+  margin-top: inherit;
   margin-bottom: 40px;
 
   color: var(--title-text-color);
@@ -130,6 +146,7 @@
   display: inline-block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  padding: 10px 32px;
 
   background-color: var(--button-primary-color);
 
@@ -149,8 +166,8 @@
 /* Section Advantages */
 
 .advantages-list {
-  margin: 0;
-  padding: 0;
+  margin: inherit;
+  padding: inherit;
   display: flex;
   justify-content: flex-start;
 
@@ -164,22 +181,18 @@
   display: none;
 }
 .title-advantages-subject {
-  margin-top: 0;
+  margin-top: inherit;
   margin-bottom: 10px;
 
   color: var(--title-text-color) 1;
 
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
 }
 .title-advantages-text {
   margin-top: 0;
   margin-bottom: 0;
 
-  color: var(--primary-text-color);
-
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -224,8 +237,6 @@
   margin-bottom: 30px;
   margin-top: 0;
 
-  color: var(--primary-text-color);
-
   font-size: 16px;
   line-height: 1.1875;
 }
@@ -243,18 +254,16 @@
 
 .footer-adress {
   color: #ffffff;
-
   font-size: 14px;
-  line-height: 1.1875;
+  line-height: 1.71;
   text-decoration: none;
 }
 .footer-mail,
 .footer-phone {
-  color: var(--primary-text-color);
-
   font-size: 14px;
   line-height: 1.1875;
   text-decoration: none;
+  color: var(--primary-text-color);
 }
 .footer-mail:hover,
 .footer-mail:focus {
@@ -293,6 +302,10 @@
 .button-list-item {
   display: inline-block;
   border-radius: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 
   background-color: var(--button-primary-color);
   color: var(--title-text-color);
@@ -376,8 +389,6 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  color: var(--primary-text-color);
-
   font-size: 16px;
   line-height: 1.875;
 }
@@ -406,4 +417,6 @@
 }
 .image {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
