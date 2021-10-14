@@ -305,7 +305,9 @@ p {
 
 /* Portfolio page */
 /* Buttons */
-
+.hidden {
+  display: none;
+}
 .button-list-item {
   display: inline-block;
   border-radius: 4px;
