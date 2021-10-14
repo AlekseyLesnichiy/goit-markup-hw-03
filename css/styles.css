@@ -275,6 +275,7 @@ p {
   line-height: 1.1875;
   text-decoration: none;
   color: var(--primary-text-color);
+  font-style: normal;
 }
 .footer-mail:hover,
 .footer-mail:focus {
@@ -312,6 +313,7 @@ p {
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
+  border: none;
 
   background-color: var(--button-primary-color);
   color: var(--title-text-color);
