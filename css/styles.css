@@ -8,35 +8,41 @@
   --accent-color: #2196f3;
   --button-primary-color: #f5f4fa;
   --primary-bg-color: #e5e5e5;
+  --white-color: #ffffff;
+  --background-hero-color: #2f303a;
 }
 
-.body {
+body {
   background-color: var(--primary-bg-color);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
   color: var(--primary-text-color);
 }
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
   margin-bottom: 0px;
 }
-.ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.p {
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* Header */
+.header {
+  border-bottom: 1px solid #eeeeee;
+  background-color: var(--white-color);
+}
 
 .navigate-list {
   margin: inherit;
@@ -58,7 +64,6 @@
 .container.nav {
   display: flex;
   align-items: center;
-  border: 1px solid #eeeeee;
 }
 
 .navigate-logo {
@@ -87,7 +92,6 @@
 .navigate-contacts,
 .navigate-portfolio {
   display: block;
-  font-size: 14px;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -134,10 +138,9 @@
 /* Section Hero */
 
 .title-hero {
-  margin-top: inherit;
   margin-bottom: 40px;
 
-  color: var(--title-text-color);
+  color: var(--white-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -151,6 +154,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
+  border: none;
 
   background-color: var(--button-primary-color);
 
@@ -164,7 +168,7 @@
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 /* Section Advantages */
@@ -185,10 +189,9 @@
   display: none;
 }
 .title-advantages-subject {
-  margin-top: inherit;
   margin-bottom: 10px;
 
-  color: var(--title-text-color) 1;
+  color: var(--title-text-color);
 
   font-weight: 700;
   line-height: 1.14;
@@ -205,10 +208,12 @@
 
 .samples-list,
 .team-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
+}
+.team-list .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .samples-list .item:not(:last-child) {
   margin-right: 30px;
@@ -260,14 +265,13 @@
 }
 
 .footer-adress {
-  color: #ffffff;
-  font-size: 14px;
+  color: var(--white-color);
   line-height: 1.71;
   text-decoration: none;
+  font-style: normal;
 }
 .footer-mail,
 .footer-phone {
-  font-size: 14px;
   line-height: 1.1875;
   text-decoration: none;
   color: var(--primary-text-color);
@@ -286,9 +290,11 @@
 }
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo-color {
-  color: #ffffff;
+  color: var(--white-color);
 
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -296,13 +302,6 @@
   text-decoration: none;
 }
 
-.container.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 /* Portfolio page */
 /* Buttons */
 
@@ -327,7 +326,7 @@
 .button-list-item:hover,
 .button-list-item:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--white-color);
 }
 .projects-section-button-list,
 .projects-section-title-samples {
@@ -410,23 +409,23 @@
   padding-left: 15px;
 }
 
-.samples-section,
-.team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.section.samples,
+.section.team,
+.section.hero {
   text-align: center;
 }
-.hero-section {
+.section.team {
+  background-color: var(--button-primary-color);
+}
+.section.hero {
   padding-top: 200px;
-  padding-bottom: 280px;
-  padding-left: 130px;
-  padding-right: 130px;
-  text-align: center;
+  padding-bottom: 200px;
+  background-color: var(--background-hero-color);
 }
-.advantages-section,
-.projects-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--white-color);
 }
 .image {
   display: block;
